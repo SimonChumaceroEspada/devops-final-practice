@@ -32,3 +32,4 @@ jobs:
 
       - name: Push Docker image
         run: docker push simonchumaceroespada/rick-and-morty-devops
+        run: docker push simonchumaceroespada/rick-and-morty-wiki-devops-final
