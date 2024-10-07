@@ -24,6 +24,6 @@ This project is a web application that displays information about characters and
    ```sh
    http://localhost:3000
    ```
-## Application running::
+## Application running:
    
 ![image](https://github.com/user-attachments/assets/59b9e7e7-01ce-4f2e-a6b8-294401214c06)
