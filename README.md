@@ -13,14 +13,20 @@ This project is a web application that displays information about characters and
    ```sh
    git clone https://github.com/SimonChumaceroEspada/devops-final-practice
    ```
-2. Build and run the Docker image:
+
+2. Change directory:
+   ```sh
+   cd devops-final-practice/
+   ```
+   
+3. Build and run the Docker image:
    ```sh
    docker build -t rick-and-morty-wiki .
    ```
    ```sh
    docker run -p 3000:3000 rick-and-morty-wiki
    ```
-3. Open your browser and go to:
+4. Open your browser and go to:
    ```sh
    http://localhost:3000
    ```
