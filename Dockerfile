@@ -1,20 +1,23 @@
-# Use a base image of Node.js
-FROM node:14
+# Usa una imagen base de Node.js
+FROM node:16-alpine
 
-# Set the working directory
+# Establece el directorio de trabajo en /app
 WORKDIR /app
 
-# Copy package.json and package-lock.json
+# Copia el package.json y el package-lock.json
 COPY package*.json ./
 
-# Install dependencies
+# Instala las dependencias
 RUN npm install
 
-# Copy the rest of the application code
+# Copia el resto de la aplicación
 COPY . .
 
-# Expose the port
+# Construye la aplicación
+RUN npm run build
+
+# Expone el puerto en el que la aplicación se ejecutará
 EXPOSE 3000
 
-# Command to run the application
-CMD ["npm", "start"]
+# Comando para ejecutar la aplicación
+CMD ["npm", "run", "preview"]
