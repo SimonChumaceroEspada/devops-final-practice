@@ -25,10 +25,10 @@ jobs:
         run: npm test
 
       - name: Build Docker image
-        run: docker build -t your-dockerhub-username/your-repo-name .
+        run: docker build -t simonchumaceroespada/rick-and-morty-devops .
 
       - name: Log in to Docker Hub
         run: echo "${{ secrets.DOCKER_HUB_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_HUB_USERNAME }}" --password-stdin
 
       - name: Push Docker image
-        run: docker push your-dockerhub-username/your-repo-name
+        run: docker push simonchumaceroespada/rick-and-morty-devops
