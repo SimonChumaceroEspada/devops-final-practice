@@ -26,3 +26,6 @@ jobs:
 
       - name: Push Docker image
         run: docker push simonchumaceroespada/rick-and-morty-devops
+
+      - name: Run Docker container
+        run: docker run -d -p 4173:4173 simonchumaceroespada/rick-and-morty-devops
